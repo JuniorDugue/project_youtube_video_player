@@ -2,7 +2,10 @@ import React from "react";
 
 import {Grid} from "@material-ui/core";
 import youtube from "./api/youtube";
-import {SearchBar, VideoList, VideoDetail} from "./components";
+// import {SearchBar, VideoList, VideoDetail} from "./components";
+import SearchBar from "./components/SearchBar";
+import VideoDetail from "./components/VideoDetail";
+// import VideoList from "./components/VideoList";
 
 class App extends React.Component{
   render(){
@@ -12,14 +15,13 @@ class App extends React.Component{
         <Grid item xs={12}>
           <Grid container spacing={16}>
             <Grid item xs={12}>
-            {/* Search Bar */}
-            
+              <SearchBar/>            
             </Grid>
             <Grid item xs={8}>
-              {/* Video Details */}
+              <VideoDetail/>
             </Grid>
             <Grid item xs={4}>
-              {/* Video Details */}
+              {/* <VideoList/> */}
             </Grid>
           </Grid>
         </Grid>
